@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autheur" content="said ait driss" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/fontawesome-5.15.3/css/all.css"/> 
+    <link rel="stylesheet" href="css/contact_us.css"/>
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="dist/ScrollMagic/scrollMagic.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+
+    <title>Contact Us</title>
+</head>
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+        <a class="navbar-brand" href="#">
+            <span>MISI</span><span>CARS</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse " id="main-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold" href="Home.html">ACCEUIL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold" href="aboutUs.html">À PROPOS</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link font-weight-bold" href="#">NOS VOITURES </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link font-weight-bold" href="services.html">SERVICES </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link font-weight-bold" href="loginSignUp.html">SE CONNECTER </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active font-weight-bold" href="contact_us.html">CONTACTER-NOUS </a>
+              </li>
+          </ul>
+        </div>
+    </div>
+      </nav>
+    <!-- end navbar -->
+
+    <div class="container-fluid">
+        <div class="row contact_usBg position-relative" id="particles-js">
+            <!-- <img src="./images/gb.png" alt="contact_usBg"> -->
+            <div class="position-absolute" >
+                <h2 class="font-weight-bold text-blue font-italic contact_usTxt">CONTACTEZ-NOUS</h2>
+                <small class="text-white font-weight-bold">RENCONTRONS-NOUS ENSEMBLE</small>
+            </div>
+        </div>
+       
+        <div class="contactTarget"></div>
+        <div class="row row-2 position-relative mt-3">
+            <div class="offset-md-1"></div>
+            <div class="col-md-10 position-top rounded-top shadow-sm">
+                <div class="row p-5 mt-3">
+                    <div class="col-lg-7">
+                        <h2 class="font-weight-bold text-dark">Contactez-nous</h2>
+                        <p class="text-muted text-justify">
+                            MISI CARS est à votre disposition pour tout renseignement concernant votre location de véhicule au Maroc.
+                        </p>
+                        <div class="row mt-5 overflow-hidden">
+                            <div class="col-md-6 contactInfoLocalisation">
+                                <i class="fas fa-map-marker-alt fa-2x"></i><br>
+                                <b class="text-muted">ADRESSE</b>
+                                <p class="text-black-50">
+                                    Street Name 50,
+                                    Building 1707 HAY ELOUAHDA,
+                                    Ville :OUARZAZATE
+                                </p>
+                            </div>
+                            <div class="col-md-6 contactInfoHours">
+                                <i class="fas fa-clock fa-2x"></i><br>
+                                <b class="text-muted">HORAIRES D'OUVERTURES</b>
+                                <p class="text-black-50">
+                                    lundi à vendredi : 10:00 à 19:00
+                                    Samedi : 10:00 à 16:00
+                                    Dimanche : 12:00 à 16:00
+                                </p>
+                            </div>
+                            <div class="col-md-6 contactInfoEmail">
+                                <i class="fas fa-envelope fa-2x"></i><br>
+                                <b class="text-muted">E-MAIL ADRESSE</b>
+                                <p class="text-black-50">
+                                    MISICARS@GMAIL.COM
+                                </p>
+                            </div>
+                            <div class="col-md-6 contactInfoPhone">
+                                <i class="fas fa-phone-alt fa-2x"></i><br>
+                                <b class="text-muted">TÉLÉPHONE</b>
+                                <p class="text-black-50">
+                                    Appeler le service client:
+                                    +212600000000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 p-4 pt-5 text-center shadow rounded-lg contactDivScrol">
+                        <h2 class="text-blue">laisser un mot</h2>
+                        <p class="text-black-50 text-center">
+                            N'hésitez pas à nous contacter si vous avez d'autres questions ou préoccupations
+                        </p>
+                        <small class="msgs" >
+                        </small>
+                        <form action="" class="needs-validation">
+                            <div class="form-row px-3">
+                                <div class="col-md-12 mt-3">
+                                    <input type="text" class="form-control " placeholder="Votre nom" id="name" required>
+                                    <div class="invalid-feedback">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <input type="email" class="form-control" placeholder="Votre E-mail adresse" id="email">
+                                    <div class="invalid-feedback">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <input type="text" class="form-control" placeholder="Message" id="message">
+                                    <div class="invalid-feedback">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-5">
+                                    <input type="submit" value="Envoyer le message !" class="btn btn-light rounded-pill font-weight-bold px-4 py-2 text-white">
+                                </div>
+                            </div>
+                        </form>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-12">
+                <h2 class="text-dark text-center font-weight-bold m-3">Trouvez nous</h2>
+                <div class="bordred" id="map">
+                    <!-- <img src="./images/maps.jpg" alt="" class="img-fluid"> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13688.825507383364!2d-6.924972832202887!3d30.936800134341798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdbb107e8e3b6fc5%3A0xb51cd76e8d3235ce!2sForces%20Arm%C3%A9es%20Royales%20Marocaines%2C%20Ouarzazate%2045000!5e0!3m2!1sen!2sma!4v1592396758234!5m2!1sen!2sma" style="width: 100%;height: 400px;"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+            </div>
+    </div>
+
+    <!--Start Footer-->
+<div class="row mt-2" data-aos="fade-up">
+    <div id="footerP"></div>
+  </div>
+  <!--End Footer-->
+  <div class="bg-dark position-fixed rounded-pill" style="top: 40%;right: 10px;">
+    <button type="button" class="btn btn-link shadow-none" id="btnToTop">
+        <i class="fas fa-sort-up fa-2x"></i>
+    </button><br>
+    <button class="btn btn-link shadow-none" id="btnToDown">
+        <i class="fas fa-sort-down fa-2x"></i>
+    </button>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWXwpcuqadJtHdtqbtYFDb1-r7cjkx15M&callback=initMap" type="text/javascript"></script>
+    <script src="js/contact_us.js" type="module"></script> 
+    <script src="dist/particles/particles.js"></script>
+    <script src="dist/particles/app.js"></script>
+    <script>
+
+        // to top & to down
+
+            // to top
+            $("#btnToTop").on("click",function(){
+                let scroll=$(window).scrollTop();
+                $(window).scrollTop(scroll-200);
+            });
+            // to down
+            $("#btnToDown").on("click",function(){
+                let scroll=$(window).scrollTop();
+                $(window).scrollTop(scroll+200);
+            });
+
+
+
+        // googla maps
+        /*
+
+            function initMap(){
+                let location={
+                    lat:30.926660,
+                    lng:-6.906117
+                }
+                // 
+                let _map=new google.maps.Map(document.getElementById("map"),{
+                    zoom:16,
+                    center:location
+                });
+
+                let marker=new google.maps.Marker({
+                    position:location,
+                    map:_map
+                });
+
+                
+            }
+            */
+
+    </script>
+</body>
+</html>

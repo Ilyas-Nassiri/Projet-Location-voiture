@@ -1,0 +1,119 @@
+/* footer {
+    position: absolute;
+    bottom: 0;
+} */
+
+/* first row*/
+footer .row:first-child {
+  background-color: #5bc0eb;
+  height: 100px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+footer .row:first-child div.imgLogoFooter img {
+  width: max-content;
+}
+footer .row:first-child a i {
+  margin: 10px;
+  border-radius: 50%;
+  color: #212227;
+  transition: all 0.3s ease;
+  opacity: 0.9;
+}
+
+footer .row:first-child a i:hover {
+  scale: 1.2;
+  -webkit-transform: scale(1.3);
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* second row*/
+footer .row:nth-child(2) {
+  background-color: #212227;
+  height: auto;
+  padding: 0px 20px;
+  padding-bottom: 30px;
+}
+
+footer .row:nth-child(2) div {
+  text-align: start;
+  color: white;
+  padding-top: 20px;
+}
+
+footer .row:nth-child(2) div:nth-child(2) {
+  /* border: 4px solid #5BC0EB; */
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+  padding-bottom: 15px;
+}
+
+footer .row:nth-child(2) div h1 {
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+footer .row:nth-child(2) div h5 {
+  padding-bottom: 20px;
+  width: max-content;
+  border-bottom: 2px solid #5bc0eb;
+}
+
+footer .row:nth-child(2) div ul li {
+  background-color: #212227;
+  padding-left: 0px;
+}
+
+footer .row:nth-child(2) div ul li:hover {
+  color: #5bc0eb;
+}
+
+/* last row*/
+footer .row:last-child {
+  height: auto;
+  background-color: #000000;
+  position: relative;
+  padding: 0px 0px 10px 0px;
+}
+
+footer .row:last-child img {
+  position: absolute;
+  right: 48%;
+  top: -70%;
+  background-color: #5bc0eb;
+  border-radius: 50%;
+  max-width: 60px;
+  text-align: center;
+  padding: 15px 10px;
+  box-shadow: 1px 2px 20px 2px #5bc0eb;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+  footer .row:last-child img {
+    display: none;
+  }
+}
+/* moving car */
+
+#movingCars {
+  position: absolute;
+  max-width: 50px;
+  animation-name: moving;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+  top: 20%;
+  left: -10%;
+}
+
+@keyframes moving {
+  from {
+    laft: -10%;
+  }
+  to {
+    left: 110%;
+  }
+}

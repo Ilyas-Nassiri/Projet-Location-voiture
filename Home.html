@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="dist/fontawesome-5.15.3/css/all.css"/> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Home</title>
+</head>
+<body>
+    <!--Start navbar-->
+     <!--Start navbar-->
+     <section class="header">
+      <div class="wive"></div>
+      <div id="headerP"></div>
+        <div class="hero-shapes-left hidden-md hidden-sm hidden-xs">
+          <img class="hero-car-left" id="car-im1"  src="images/left.png" />
+        </div>
+          <div class="position-absolute  p-3   rounded-lg" style="background-color:transparent; max-width: 570px; top: 28%;
+          left: 29%;  animation: 1s ease-out 0s 1 slideInLeft;">
+            <form action="">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="lieuD" class="font-weight-bold text-white">LIEU DE DEPART :</label>
+                            <select class="custom-select rounded-lg" id="lieuD">
+                                <option value="Ouarzazate">Ouarzazate</option>
+                                <option value="Tanger">Tanger</option>
+                                <option value="Rabat">Rabat</option>
+                            </select>
+                            <small id="lieuDHelp" class="form-text text-white">Veuillez sélectionner une ville de départ</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="lieuD" class="font-weight-bold text-white">DATE DE DEPART :</label>
+                            <input type="date" class="form-control rounded-lg">
+                            <small id="lieuDHelp" class="form-text text-white">Veuillez sélectionner une date de départ</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="lieuD" class="font-weight-bold text-white">HEURE DE DEPART :</label>
+                            <select class="custom-select rounded-lg" id="lieuD">
+                                <option value="12:00">12:00</option>
+                                <option value="00:00">00:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="02:00">02:00</option>
+                                <option value="03:00">03:00</option>
+                                <option value="04:00">04:00</option>
+                                <option value="05:00">05:00</option>
+                                <option value="06:00">06:00</option>
+                                <option value="07:00">07:00</option>
+                                <option value="08:00">08:00</option>
+                                <option value="08:00">09:00</option>
+                                <option value="08:00">10:00</option>
+                                <option value="08:00">11:00</option>
+                                <option value="08:00">12:00</option>
+                                <option value="08:00">13:00</option>
+                            </select>
+                            <small id="lieuDHelp" class="form-text text-white">Veuillez sélectionner une heure de départ</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="lieuD" class="font-weight-bold text-white">LIEU DE RETOUR :</label>
+                            <select class="custom-select rounded-lg" id="lieuD" >
+                                <option value="Ouarzazate">Ouarzazate</option>
+                                <option value="Tanger">Tanger</option>
+                                <option value="Rabat">Rabat</option>
+                            </select>
+                            <small id="lieuDHelp" class="form-text text-white">Veuillez sélectionner une ville de retour</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="lieuD" class="font-weight-bold text-white">DATE DE RETOUR :</label>
+                            <input type="date" class="form-control rounded-lg">
+                            <small id="lieuDHelp" class="form-text text-white">Veuillez sélectionner une date de retour</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="lieuD" class="font-weight-bold text-white">HEURE DE RETOUR :</label>
+                            <select class="custom-select rounded-lg" id="lieuD">
+                                <option value="12:00">12:00</option>
+                                <option value="00:00">00:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="02:00">02:00</option>
+                                <option value="03:00">03:00</option>
+                                <option value="04:00">04:00</option>
+                                <option value="05:00">05:00</option>
+                                <option value="06:00">06:00</option>
+                                <option value="07:00">07:00</option>
+                                <option value="08:00">08:00</option>
+                                <option value="08:00">09:00</option>
+                                <option value="08:00">10:00</option>
+                                <option value="08:00">11:00</option>
+                                <option value="08:00">12:00</option>
+                                <option value="08:00">13:00</option>
+                            </select>
+                            <small id="lieuDHelp" class="form-text text-white">Veuillez sélectionner une heure de retour</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <input type="submit" value="RECHERCHER" class="btn  font-weight-bold rounded-pill text-white" style="background-color: #2B3658;">
+                    </div>
+                </div>
+                
+            </form>
+          </div>
+  </div>
+  <div class="hero-shapes-right hidden-md hidden-sm hidden-xs">
+  <img class="hero-car-right" id="car-im" src="images/hero-car-right.png" />
+  </div>
+  
+      </section>
+      
+     <!--start advantages-->  
+     <h1 class="ml11" id="avant" data-aos="fade-up">
+      <span class="text-wrapper">
+        <span class="line line1"></span>
+        <span class="letters">Avantages</span>
+      </span>
+    </h1>
+<div class="adventages" data-aos="zoom-in-up" data-aos-duration="3000">
+    
+    <div class="container">
+    <div class="col-xs-6 float-left" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+    <div class="adventage"><img alt="Agence location voiture Maroc Agadir disponible" class="lazy img-responsive" src="images/dispo.png">
+    <h4>Disponibilité</h4>
+    Résérvation en ligne en Temps reél 24/7</div>
+    
+    <div class="adventage"><img alt="Agence location voiture Maroc Agadir large choix de voitures" class="lazy img-responsive" src="images/choix.png">
+    <h4>Choix</h4>
+    
+    <div>Aucun Frais Pour Modification de Résérvation</div>
+    </div>
+    </div>
+    
+    <div class="col-xs-6 float-right"  data-aos="fade-left"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" >
+    <div class="adventage"><img alt="Agence de location de voitures pas chère au Maroc" class="lazy img-responsive" src="images/prix.png">
+    <h4>prix</h4>
+    
+    <div>Meilleurs Prix , Garantie</div>
+    </div>
+    
+    <div class="adventage"><img alt="Cars rental agency in Morocco" class="lazy img-responsive" src="images/pro.png">
+    <h4>Proximité</h4>
+    
+    <div>On livre partout</div>
+    </div>
+    </div>
+    </div>
+    </div>
+   
+    
+
+     <!--end advantages-->
+     <!--Start Remise-->
+     <h1  id="avant" data-aos="fade-up">
+      <span class="text-wrapper">
+        <span class="line line1"></span>
+        <span class="letters">Remise</span>
+      </span>
+    </h1>
+    
+     <div class="container">
+      <div class="row">
+       <div class="col-md-4 " data-aos="zoom-in-right"><div class="flip-card">
+         <div class="flip-card-inner">
+           <div class="flip-card-front">
+             <img class="img-Remise" src="images/VW-VolkswagenGolf.png" alt="Avatar">
+           </div>
+           <div class="flip-card-back">
+             <h1>Golf 7</h1>
+             <p>La Golf VII est une berline compacte qui est la 7e génération de Volkswagen Golf produite par le constructeur automobile allemand Volkswagen</p>
+             <h3>650 Dh</h3>
+             <h5 class="text-muted" style="text-decoration: line-through;">750 Dh</h5>
+             
+           </div>
+         </div>
+       </div></div>
+       <div class="col-md-4"data-aos="zoom-in" ><div class="flip-card">
+         <div class="flip-card-inner">
+           <div class="flip-card-front">
+             <img class="img-Remise" src="images/Mercedes-A-Class-lg.png" alt="Avatar ">
+           </div>
+           <div class="flip-card-back">
+             <h1>Mercedes-A</h1>
+             <p>La Position De Conduite Haute De Cette Voiture De Location, Comme Dans Les Tout-Terrains....</p>
+             <h3>700 Dh</h3>
+             <h5 class="text-muted" style="text-decoration: line-through;">800 Dh</h5>
+           </div>
+         </div>
+       </div></div>
+       <div class="col-md-4 col-sm-12 " data-aos="zoom-in-left"><div class="flip-card">
+         <div class="flip-card-inner">
+           <div class="flip-card-front">
+             <img class="img-Remise" src="images/Huyndai-Coupé.png" alt="Avatar ">
+           </div>
+           <div class="flip-card-back">
+             <h1>Huyndai-Coupé</h1>
+             <p>La Position De Conduite Haute De Cette Voiture De Location, Comme Dans Les Tout-Terrains</p>
+             <h3>400 Dh</h3>
+             <h5 class="text-muted" style="text-decoration: line-through;">500 Dh</h5>
+           </div>
+         </div>
+       </div></div>
+      </div>
+     </div>
+    
+     <!--End Remise-->
+<!--Start blogue-->
+<h1 class="ml11" id="avant" data-aos="fade-up">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters">Blogue & Nouvelle</span>
+  </span>
+</h1>
+<div class="gtco-section" id="gtco-sec">
+  <div class="gtco-container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-down-right">
+        <a href="blog.html" class="fh5co-card-item image-popup">
+          <figure>
+            <div class="overlay"><i class="ti-plus"></i></div>
+            <img src="images/Amridil.jpg" alt="Image" class="img-responsive">
+          </figure>
+          <div class="fh5co-text">
+            <h2>Kasbah Amridil , Skoura Ouarzazate</h2>
+            <p>La Kasbah d’Amridil est l’une des plus célèbres de la province. Elle se situe dans la localité de Skoura qui est connue en tant....</p>
+            <p><span class="btn btn-primary">Lire Plus</span></p>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-down">
+        <a href="#gtco-sec" class="fh5co-card-item image-popup">
+          <figure>
+            <div class="overlay"><i class="ti-plus"></i></div>
+            <img src="images/Legzira.jpg" alt="Image" class="img-responsive">
+          </figure>
+          <div class="fh5co-text">
+            <h2>Plage Lagzira</h2>
+            <p>Lagzira est une plage sauvage marocaine, située dans la commune rurale de Tioughza, entre les villes de Tiznit et Sidi Ifni, à environ 150 km au sud d'Agadir, et à 10 km au nord de Sidi ifni...</p>
+            <p><span class="btn btn-primary">Lire Plus</span></p>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-down-left">
+        <a href="#gtco-sec" class="fh5co-card-item image-popup">
+          <figure>
+            <div class="overlay"><i class="ti-plus"></i></div>
+            <img src="images/Assilah.jpg" alt="Image" class="img-responsive">
+          </figure>
+          <div class="fh5co-text">
+            <h2>La médina d'Asilah</h2>
+            <p>FLa médina d'Asilah est très bien entretenue.
+              La plupart des maisons ont un usage résidentiel, et c'est un lieu très à la mode aussi bien pour les Marocains que pour les touristes...</p>
+            <p><span class="btn btn-primary">Lire Plus</span></p>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="col-lg-4 col-md-4 col-sm-6"data-aos="fade-up-right">
+        <a href="#gtco-sec" class="fh5co-card-item image-popup">
+          <figure>
+            <div class="overlay"><i class="ti-plus"></i></div>
+            <img src="images/Ouzoud.jpg" alt="Image" class="img-responsive">
+          </figure>
+          <div class="fh5co-text">
+            <h2>Cascades d'Ouzoud</h2>
+            <p>On pourrait presque oublier que vous êtes dans le désert une fois que vous voyez ces magnifiques chutes d'eau! Il est un peu d'une randonnée de haut en bas, mais une excellente façon...</p>
+            <p><span class="btn btn-primary">Lire Plus</span></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up">
+        <a href="#gtco-sec" class="fh5co-card-item image-popup">
+          <figure>
+            <div class="overlay"><i class="ti-plus"></i></div>
+            <img src="images/Marzouga.jpg" alt="Image" class="img-responsive">
+          </figure>
+          <div class="fh5co-text">
+            <h2>Coucher de soleil sur les dunes de merzouga</h2>
+            <p>Un voyage dans le désert au Maroc n'est pas complet sans un trek dans les dunes.
+              Pour ceux qui sont fascinés par les caravanes qui traversent les déserts africains entre des villes mythiques...</p>
+            <p><span class="btn btn-primary">Lire Plus</span></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up-left">
+        <a href="#gtco-sec" class="fh5co-card-item">
+          <figure>
+            <div class="overlay"><i class="ti-plus"></i></div>
+            <img src="images/Dakhla.jpg" alt="Image" class="img-responsive">
+          </figure>
+          <div class="fh5co-text">
+            <h2>Kitesurf et windsurf a Dakhla</h2>
+            <p>Dakhla pour beaucoup est la définition des conditions idéales pour le kitesurf.
+              Une des plus grandes lacunes dans le monde entier kiteboarding est adaptée avec des taches de vague parfaite...</p>
+            <p><span class="btn btn-primary">Lire Plus</span></p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--End Blogue-->
+
+<!--Start Testimonials-->
+<div class="container-fluid px-2 px-md-4 py-5 mx-auto" data-aos="zoom-in">
+  <div class="row d-flex justify-content-center">
+      <div class="col-md-12 col-lg-11 col-xl-10">
+          <div class="card card-main border-0 text-center ">
+              <h5 class="font-weight-bold mb-4">Ce que nos clients disent<br>de nous.</h5>
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                      <div class="carousel-item">
+                          <div class="card border-0 card-0">
+                              <div class="card profile py-3 px-4">
+                                  <div class="text-center"> <img src="images/pers1.jpg" class="img-fluid profile-pic"> </div>
+                                  <h6 class="mb-0 mt-2">Marielle Haag</h6>
+                              </div> <img class="img-fluid open-quotes" src="images/tes1.png" width="20" height="20">
+                              <p class="content mb-0">Le choix du véhicule et du prix, adapté à mon besoin</p> <img class="img-fluid close-quotes ml-auto" src="images/test2.png" width="20" height="20">
+                          </div>
+                      </div>
+                      <div class="carousel-item active">
+                          <div class="card border-0 card-0">
+                              <div class="card profile py-3 px-4">
+                                  <div class="text-center"> <img src="images/pers3.jpg" class="img-fluid profile-pic"> </div>
+                                  <h6 class="mb-0 mt-2">Ximena Vegara</h6> 
+                              </div> <img class="img-fluid open-quotes" src="images/tes1.png" width="20" height="20">
+                              <p class="content mb-0">Un service efficace grâce à sa connaissance du secteur de la location de voiture au Maroc</p> <img class="img-fluid close-quotes ml-auto" src="images/test2.png" width="20" height="20">
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="card border-0 card-0">
+                              <div class="card profile py-3 px-4">
+                                  <div class="text-center"> <img src="images/pers2.jpg" class="img-fluid profile-pic"> </div>
+                                  <h6 class="mb-0 mt-2">John Paul</h6>
+                              </div> <img class="img-fluid open-quotes" src="images/tes1.png" width="20" height="20">
+                              <p class="content mb-0">Nous avons été ravis de la voiture et n’hésiterons pas à vous rendre à nouveau.    </p> <img class="img-fluid close-quotes ml-auto" src="images/test2.png" width="20" height="20">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--End Testimonials-->
+
+<!-- faq start  -->
+<div class="faq w-100" data-aos="zoom-in">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12 ">
+              <h3 class="text-center p-2 font-weight-bold text-white">
+                  <i class="fab fa-dropbox"></i>
+                  Maroc - Location de voiture - FAQ
+              </h3>
+          </div>
+          <div class="col-md-12">
+              <button data-toggle="collapse" data-target="#q1" class="shadow-lg btn btn-link bg-transparent w-100 text-white text-justify text-decoration-none font-weight-bold">
+                  Maroc - Quelle est la categorie des voitures la plus populaire ? 
+                  <i class="fas fa-chevron-down text-white float-right fa-2x"></i>
+              </button>
+              <div id="q1" class="collapse pl-3 text-start text-info rounded-right rounded-left py-2 ">
+                  Citadine (Hyundai i10 ou similaire) est la catégorie de voiture la plus réservée à Maroc.
+                  </div>
+          </div>
+          <div class="col-md-12">
+              <button data-toggle="collapse" data-target="#q2" class="btn btn-link bg-transparent shadow-lg w-100  text-white text-justify text-decoration-none font-weight-bold">
+                  Maroc - Où trouver des voitures de location à proximité ?
+                  <i class="fas fa-chevron-down text-white float-right fa-2x"></i>
+              </button>
+              <div id="q2" class="collapse pl-3 text-start text-info">
+                  Découvrez notre carte des locations de voitures pour trouver les meilleures voitures à proximité.
+                  </div>
+          </div>
+          <div class="col-md-12">
+              <button data-toggle="collapse" data-target="#q3" class="btn btn-link bg-transparent shadow-lg w-100  text-white text-justify text-decoration-none font-weight-bold">
+                  Maroc - Quelle est la meilleure période pour louer une voiture ?
+                  <i class="fas fa-chevron-down  text-white float-right fa-2x"></i>
+              </button>
+              <div id="q3" class="collapse pl-3 text-info">
+                      Selon les recherches de voitures, les destinations les plus populaires pour louer une voiture sont 
+                      <a href="/location-voiture-Marrakech.26374.cars.ksp">Marrakech</a>
+                      (27% du total des recherches pour le pays/la région (Maroc)), 
+                      <a href="/location-voiture-Casablanca.25947.cars.ksp">Casablanca</a>
+                      (16%) et 
+                      <a href="/location-voiture-Fes.26641.cars.ksp">Fès</a>
+                      (13%).
+                  </div>
+          </div>
+          <div class="col-md-12">
+              <button data-toggle="collapse" data-target="#q4" class="btn btn-link bg-transparent shadow-lg w-100  text-white text-justify text-decoration-none font-weight-bold">
+                  Maroc - Combien coûte la location d’une voiture pendant une semaine ?
+                  <i class="fas fa-chevron-down text-white float-right fa-2x"></i>
+              </button>
+              <div id="q4" class="collapse pl-3 text-info">
+                  Une location de voiture à Maroc coûte 2100dh par semaine (300dh par jour).
+                  </div>
+          </div>
+          <div class="col-md-12">
+              <button data-toggle="collapse" data-target="#q5" class="btn btn-link bg-transparent shadow-lg border-0 w-100  text-white text-justify text-decoration-none font-weight-bold">
+                  Maroc - Combien coûte la location d’une voiture pendant un mois ?
+                  <i class="fas fa-chevron-down text-white float-right fa-2x"></i>
+              </button>
+              <div id="q5" class="collapse pl-3 text-info">
+                  Une voiture de location à Maroc coûte en moyenne 9000dh par mois (300dh par jour).
+                  </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- faq end -->
+<!--Start Footer-->
+<div class="row mt-2" data-aos="fade-up">
+  <div id="footerP"></div>
+</div>
+
+<div class="bg-dark position-fixed rounded-pill" style="top: 40%;right: 10px;">
+  <button type="button" class="btn btn-link shadow-none" id="btnToTop">
+      <i class="fas fa-sort-up fa-2x"></i>
+  </button><br>
+  <button class="btn btn-link shadow-none" id="btnToDown">
+      <i class="fas fa-sort-down fa-2x"></i>
+  </button>
+  </div>
+<!--End Footer-->
+       
+    <script src="js/aos.js"></script>
+     <script src="js/anime.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Home.js"></script>
+
+    <script>
+      // to top & to down
+            // to top
+            $("#btnToTop").on("click",function(){
+                let scroll=$(window).scrollTop();
+                $(window).scrollTop(scroll-200);
+        });
+            // to down
+        $("#btnToDown").on("click",function(){
+              let scroll=$(window).scrollTop();
+                $(window).scrollTop(scroll+200);
+        });
+    </script>
+</body>
+</html>

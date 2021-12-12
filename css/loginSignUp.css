@@ -1,0 +1,137 @@
+
+/* 
+    #009ffd=>bluse
+    #5BC0EB=>light blue
+
+*/
+body{
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body .container-fluid .row{
+    min-height: 100vh;
+}
+
+
+/* ! login  */
+.col-lg-right{
+    padding:120px  7% !important;
+}
+
+.col-lg-right input[type="email"],
+.col-lg-right input[type="password"]{
+    color: #000000;
+    background-position: calc(2%) center;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+
+.col-lg-right #email{
+    background-image: url("../images/svg/email.svg");
+    background-size: 35px;
+}
+
+.col-lg-right #password{
+    background-image: url("../images/svg/lock.svg");
+    background-size: 30px;
+}
+
+
+.btn-light{
+    background-color: #5BC0EB;
+}
+
+
+/* left */
+
+.col-lg-left{
+    background-color: #5BC0EB;
+    text-align: center;
+    margin-top: -100px;
+    border-radius: 0% 0% 70% 0%;
+}
+
+.col-lg-left img{
+    max-width: 100%;
+    max-height: 370px;
+}
+
+.signUpRow{
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/* ! regeter */
+
+.container-fluid .row .col-lg-left-2{
+    padding: 5% 120px 50px 120px !important;
+    
+}
+
+.container-fluid .row .col-lg-left-2 input[type="email"],
+.container-fluid .row .col-lg-left-2 input[type="text"],
+.container-fluid .row .col-lg-left-2 input[type="password"]{
+    color: #000000;
+    background-position: calc(2%) center;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+
+.container-fluid .row .col-lg-left-2 #fullname{
+    background-image: url("../images/svg/user.svg");
+    background-size: 25px;
+}
+
+.container-fluid .row .col-lg-left-2 #emailR{
+    background-image: url("../images/svg/email.svg");
+    background-size: 25px;
+}
+
+
+.container-fluid .row .col-lg-left-2 #passwordR{
+    background-image: url("../images/svg/lock.svg");
+    background-size: 25px;
+}
+
+
+/* right */
+
+.container-fluid .row .col-lg-right-2{
+    background-color: #5BC0EB;
+    border-radius: 0% 0% 0% 70%;
+}
+#signUpBtn{
+    margin:10px auto;
+}
+.container-fluid .row .col-lg-right-2 img{
+    max-width: 100%;
+    max-height: 370px;
+    margin: 0px auto;
+}
+
+
+
+/* ANIMATIONS ANIME.JS */
+.parent,.parent1{
+    position: relative;
+    overflow:hidden;
+    text-align: center;
+    height: auto;
+}
+.myBlock,.myBlock1{
+    height: 5px;
+    width: 5px;
+    box-shadow: 1px 1px 1px #5BC0EB;
+    background:linear-gradient(315deg, #FFF 50%, #FFF 50%);
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.2;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    /* margin: 10px; */
+}

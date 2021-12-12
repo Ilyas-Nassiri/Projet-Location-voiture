@@ -1,0 +1,192 @@
+/* global begin */
+
+i,
+.text-blue {
+  color: #5bc0eb;
+  font-family: cursive;
+}
+.btn-light {
+  background-color: #5bc0eb;
+}
+body {
+  overflow-x: hidden;
+}
+/* global end */
+body .container-fluid .contact_usBg {
+  background-color: #5bc0eb;
+}
+
+body .container-fluid .contact_usBg img {
+  min-width: 100%;
+  height: 500px;
+  max-height: 100vh;
+  opacity: 0.8;
+}
+
+body .container-fluid .contact_usBg .position-absolute {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+body .container-fluid .contact_usBg .position-absolute h2 {
+  font-size: 4vw;
+}
+
+/* second row */
+
+body .container-fluid .row-2 .position-top {
+  background-color: #ffffff;
+  /* top: 20%; */
+  /* left: 50%; */
+  /* transform: translate(-50%,-100px); */
+  height: auto;
+  margin-top: -100px;
+}
+
+.row-2 #name,
+.row-2 #email,
+.row-2 #message {
+  /* border: 0px; */
+  /* border-bottom: 1px solid #ccc; */
+  padding-left: 26px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  box-shadow: 0px;
+  background-position-x: 4px;
+}
+
+.row-2 #name {
+  background-image: url("../images/svg/user.svg");
+}
+
+.row-2 #email {
+  background-image: url("../images/svg/email.svg");
+}
+
+.row-2 #message {
+  background-image: url("../images/svg/msg.svg");
+}
+
+.row-2 #name:focus,
+.row-2 #email:focus,
+.row-2 #message:focus,
+.row-2 #name:active,
+.row-2 #email:active,
+.row-2 #message:active {
+  border-bottom: 1px solid #5bc0eb;
+  box-shadow: none;
+}
+
+#map {
+  height: 400px;
+}
+
+/* scroll magic */
+
+/* contact form begin */
+.contactDivScrol {
+  transform: translate3d(30px, 30px, 40px) rotate3d(-1, 4, -1, 360deg);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.contactDivScrol.show {
+  transform: translate3d(0px, 0px, 0px) rotate3d(1, 1, 1, 0deg);
+  opacity: 1;
+}
+
+/* contact form finsh */
+
+/* contact info begin */
+.contactInfoLocalisation {
+  transform: translate3d(-300px, 0px, 0px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.contactInfoLocalisation.show {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+/** 2 */
+.contactInfoHours {
+  transform: translate3d(300px, 0px, 0px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.contactInfoHours.show {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/* * 3 */
+.contactInfoEmail {
+  transform: translate3d(0px, 300px, 0px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.contactInfoEmail.show {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+}
+
+/* * 4 */
+.contactInfoPhone {
+  transform: translate3d(0px, 300px, 0px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.contactInfoPhone.show {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+  perspective: 100px;
+}
+/* contact info begin */
+
+.msgs {
+  height: 12px;
+  color: red;
+}
+
+/* #footerP{
+    margin-top: 1000px;
+} */
+
+/* faq section */
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar-brand span {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+.navbar-brand span:first-child {
+  font-weight: bold;
+  color: #5bc0eb;
+}
+.navbar-brand span:last-child {
+  color: rgb(255, 255, 255);
+}
+.navbar-nav .nav-link {
+  margin-left: 16px;
+  font-family: sans-serif;
+  color: #fff !important;
+}
+.nav-link.active {
+  color: #5bc0eb !important;
+}
+.navbar-nav .nav-link:hover {
+  color: #5bc0eb !important;
+}
+
+/* canva begin */
+
+canvas {
+  background-color: #1377a1;
+}
+/* canva end */

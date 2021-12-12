@@ -1,0 +1,150 @@
+body{
+
+    background-color: #5BC0EB;
+    background-image: linear-gradient(315deg, #5BC0EB 55%, #009ffd 30%);
+    height: max-content;
+}
+
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: inherit;
+}
+menu .col-md-10{
+
+    max-height: fit-content;
+    background-image: url("../images/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    border-radius: 7px;
+    padding-right: 0%;
+    padding-left: 0%;
+    box-shadow: 1px 1px 5000px 1px #009ffd;
+}
+
+
+menu .col-md-10 .right{
+
+    background-color: #00a0fd1e;
+    height: inherit;
+    padding-bottom: 10px;
+}
+
+menu .col-md-10 .right h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+menu .col-md-10 .right input[type="password"]{
+    background-image: url("../images/svg/key-solid.svg");
+}
+
+menu .col-md-10 .right input[type="email"]{
+    background-image: url("../images/svg/at-solid.svg");
+}
+
+
+menu .col-md-10 .right input{
+    background-color: transparent;
+    border:0px;
+    border-radius: 0px;
+    border-bottom: 2px solid #5BC0EB;
+    color: #5BC0EB;
+    background-position-x: left;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    padding-left: 33px;
+}
+
+menu .col-md-10 .right input:focus,menu .col-md-10 .right input:active{
+    outline: 0px;
+    box-shadow: none;
+    border-bottom: 2px solid #009ffd;
+    font-weight: bolder;
+}
+
+
+menu .col-md-10 .right button.btn-light{
+    background-color: #5bc0eb54;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+menu .col-md-10 .right button.btn-light:hover{
+    background-color: #5BC0EB;
+    border: 0px;
+    
+}
+menu .col-md-10 .right button.btn:focus,
+menu .col-md-10 .right button.btn:active{
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+    background-color: #009ffd;
+}
+/* left */
+
+menu .col-md-10 .left h1{
+    margin-top: 40%;
+    animation: moveCmName 5s;
+    position: relative;
+}
+
+@keyframes moveCmName{
+    from{
+        left:-40%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+
+menu .col-md-10 .left button.btn-light{
+    box-shadow: none;
+    background-color: #5bc0eb54;
+    border:1px solid #ccc;
+    padding: 10px 33px;
+    border-radius: 20px;
+    margin-top: 50%;
+    margin-bottom: 20%;
+}
+
+
+
+menu .col-md-10 .left button.btn-light:hover{
+    background-color: #5bc0eb8e;
+}
+
+menu .col-md-10 .left button.btn-light:active,
+menu .col-md-10 .left button.btn-light:focus{
+    outline: none;
+    background-color: #5bc0eba8;
+}
+
+
+/* ANIMATIONS ANIME.JS */
+.parent{
+    position: relative;
+    overflow-x:hidden;
+    text-align: center;
+    height: auto;
+}
+.myBlock{
+    height: 10px;
+    width: 10px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.671);
+    background:linear-gradient(315deg, #5BC0EB 50%, #009ffd 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* margin: 10px; */
+}
+

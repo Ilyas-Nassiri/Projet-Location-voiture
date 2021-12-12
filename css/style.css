@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  text-transform: capitalize;
+  transition: all 0.5s cubic-bezier(0.34, 1.12, 0.68, 1.31);
+}
+
+/* Carousel*/
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+  background-color: #1377a1;
+  padding-top: 10px;
+}
+
+.banner .carousel {
+  width: 300px;
+  margin: 50px auto 0;
+  overflow: visible;
+}
+
+.carousel img {
+  border-radius: 50%;
+}
+
+.carousel img:hover {
+  background-color: #5bc0eb;
+}
+
+.description {
+  width: 70%;
+  margin: 0 auto 2rem auto;
+  padding: 2rem;
+  background-color: #fff !important;
+  border-radius: 10px;
+}
+
+.description h1 {
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+}
+
+.description p {
+  margin: 20px;
+}
+
+.description .name-agency {
+  color: #5bc0eb;
+  font-weight: bold;
+}
+
+/* Gallery */
+.gallery {
+  min-height: 100vh;
+  background: #eee;
+  padding-bottom: 100px;
+}
+
+.gallery .controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.gallery .controls .buttons {
+  height: 40px;
+  width: 140px;
+  background: #fff;
+  color: #666;
+  font-size: 20px;
+  line-height: 40px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.gallery .controls .buttons.active {
+  background: #5bc0eb;
+  color: #fff;
+}
+
+.gallery .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery .image-container .image {
+  height: 350px;
+  width: 350px;
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: 0 8px 10px rgb(0 0 0 / 60%);
+  margin: 20px;
+  position: relative;
+}
+
+.gallery .image-container .image img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+.content {
+  position: absolute;
+  bottom: 100px;
+  left: 20%;
+  padding: 8px 15px;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.8s, opacity 1.5s linear;
+}
+
+.overlay {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #81c9e7;
+  line-height: 200pxrgb (185, 233, 233);
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  transform: translateX(-100%);
+  transition: transform 0.8s ease-out;
+}
+
+.overlay p {
+  margin-bottom: 10px;
+}
+
+.image:hover .overlay {
+  transform: translateX(0);
+}
+
+.gallery .image-container .image img:hover {
+  transform: scale(1.2);
+}
+
+.gallery .image-container .image img:hover .content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 45%;
+  color: #fff;
+  background-color: #5bc0eb;
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px;
+  margin: 2rem auto 0 auto;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-detail {
+  background-color: #000;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #5bc0eb;
+  border: 1px solid rgb(46, 189, 214);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  padding-top: 10px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal .modal-content {
+  position: relative;
+  margin: auto;
+  padding: 5px;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 1s;
+}
+
+#modal-detail .modal-content {
+  background-color: #e0dede;
+  width: 30%;
+  overflow-y: scroll;
+  height: 90vh;
+}
+
+#modal-booking .modal-content {
+  width: 40%;
+}
+
+#modal-booking .modal-content .modal-body {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-header {
+  padding: 16px;
+  background-color: #5bc0eb;
+  color: white;
+  text-align: center;
+}
+
+#modal-booking .modal-content .modal-header #car-image {
+  position: absolute;
+  left: 5%;
+  top: 20px;
+  width: 40px;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-body .image-detail {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-body .titre-detail {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.modal-body .car-detail {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.modal-body .car-detail .info {
+  text-align: center;
+}
+
+.modal-body .car-detail .info .desc {
+  margin: 10px;
+}
+
+.modal-body .more-detail {
+  padding: 3rem;
+}
+
+.modal-body .list-detail ul li {
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5bc0eb;
+  color: white;
+}
+
+/* The Close Button of The Modal */
+.close,
+.close-booking {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close-booking:hover,
+.close:focus,
+.close-booking:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Form booking 
+table {
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
+input,
+select {
+  height: 38px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+input {
+  margin-right: 2rem;
+}
+
+select {
+  width: 100%;
+}
+
+label {
+  color: #fff;
+  margin-right: 20px !important;
+}
+
+.submit {
+  width: 100%;
+  height: 40px;
+  background-color: #5bc0eb;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.submit:hover {
+  background-color: #82cff0;
+}
+*/
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* Media Query for All Different Devices ---- RESPONSIVE ---- */
+@media only screen and (max-width: 885px) {
+  #modal-booking .modal-content {
+    width: 95%;
+
+    overflow-y: scroll;
+    height: 90vh;
+  }
+
+  .description {
+    width: 90%;
+  }
+  /* 
+  label {
+    display: none;
+  } */
+
+  #modal-detail .modal-content {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #modal-booking .modal-content {
+    width: 80%;
+  }
+
+  #modal-detail .modal-content {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #modal-booking .modal-content {
+    width: 60%;
+  }
+
+  #modal-detail .modal-content {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #modal-booking .modal-content {
+    width: 45%;
+  }
+
+  #myModal .modal-content {
+    width: 45%;
+  }
+}

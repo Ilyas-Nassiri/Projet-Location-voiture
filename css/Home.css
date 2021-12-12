@@ -1,0 +1,477 @@
+body {
+  font-family: cursive;
+  overflow-x: hidden;
+}
+/*start navbar*/
+
+/*End navbar*/
+/*Start Slider*/
+section.header {
+  height: 119vh;
+  background-color: #1377a1;
+  background-size: cover;
+  position: relative;
+}
+section .wive {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  background: url("/images/wave.png");
+  background-size: 1000px 70px;
+  animation: animate 15s linear infinite;
+}
+section .wive::before {
+  content: "";
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  background: url("/images/wave.png");
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  animation: animate-reverse 15s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes animate-reverse {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+.hero-shapes-left {
+  display: block;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 110px;
+  height: 510px;
+  width: 300px;
+  background: url(../images/hero-shapes-left.svg) top left no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-shapes-right {
+  display: block;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 5%;
+  height: 470px;
+  width: 280px;
+  background: url(../images/hero-shapes-right.svg) top left no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#car-im {
+  vertical-align: middle;
+  border: 0;
+  height: 400px;
+  width: 250px;
+  padding-top: 100px;
+  right: 0;
+  position: absolute;
+}
+#car-im1 {
+  vertical-align: middle;
+  border: 0;
+  margin-top: 30px;
+  height: 400px;
+  width: 330px;
+  padding-top: 100px;
+}
+@media screen and (max-width: 1200px) {
+  .hero-shapes-right,
+  .hero-shapes-left {
+    display: none;
+  }
+  .position-absolute {
+    right: 18%;
+  }
+  .position-absolute {
+    position: absolute;
+    align-items: center;
+  }
+}
+
+/*End Slider*/
+/*Start Advantages*/
+.adventages {
+  background-image: url(../images/car-advetages-cars-rental-script.jpg);
+  background-position: center !important;
+  width: 100%;
+  height: 700px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 970px) {
+  .adventages {
+    background-image: none;
+  }
+  section.header {
+    height: 1100px;
+  }
+}
+@media screen and (max-width: 550px) {
+  section.header {
+    height: 1300px;
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#avant {
+  color: #5bc0eb;
+  margin: 15px 0px;
+  text-align: center;
+}
+.col-xs-6 {
+  margin-top: 150px;
+  width: 45%;
+}
+.adventage {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.adventage img {
+  width: 100px;
+  height: 100px;
+}
+h4 {
+  color: #5bc0eb;
+  margin: 10px 0px;
+}
+/*End Advantages*/
+/*Start Remise*/
+#avant {
+  padding: 30px 0px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 90%;
+  height: 250px;
+  margin-top: 10px;
+  perspective: 1000px;
+  border: none;
+}
+.img-Remise {
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 7px 2px rgba(87, 85, 85, 0.637);
+  border-radius: 7px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #5bc0eb;
+  color: white;
+  transform: rotateY(180deg);
+}
+/*End Remise*/
+/*Start Blogue*/
+.gtco-section {
+  padding: 7em 0;
+  clear: both;
+  position: relative;
+}
+.gtco-container {
+  max-width: 1100px;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.fh5co-card-item {
+  display: block;
+  width: 100%;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  z-index: 9;
+  bottom: 0;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+  -ms-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+  -o-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fh5co-card-item figure {
+  height: 240px;
+  overflow: hidden;
+  z-index: 12;
+  position: relative;
+}
+.fh5co-card-item figure .overlay {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+}
+.fh5co-card-item figure .overlay i {
+  z-index: 12;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  margin-left: -15px;
+  margin-top: -45px;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.fh5co-card-item img {
+  z-index: 8;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+}
+.fh5co-card-item .fh5co-text {
+  padding: 0px 10px 10px 20px;
+  text-align: center;
+}
+.fh5co-card-item .fh5co-text h2,
+.fh5co-card-item .fh5co-text span {
+  text-decoration: none !important;
+}
+.fh5co-card-item .fh5co-text h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  color: #09c6ab;
+}
+.fh5co-card-item .fh5co-text span {
+  color: #b3b3b3;
+  font-size: 16px;
+  font-weight: 400;
+}
+.fh5co-card-item .fh5co-text p {
+  color: #000;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.fh5co-card-item .fh5co-text span.btn {
+  color: #fff !important;
+  opacity: 1;
+  visibility: visible;
+  bottom: 0;
+  background: #1a1a1a;
+  border: 2px solid #1a1a1a !important;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.fh5co-card-item:hover,
+.fh5co-card-item:focus {
+  bottom: 7px;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+  -o-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+}
+.fh5co-card-item:hover img,
+.fh5co-card-item:focus img {
+  -webkot-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.fh5co-card-item:hover span.btn,
+.fh5co-card-item:focus span.btn {
+  opacity: 1;
+  visibility: visible;
+  bottom: 0px;
+  border: 2px solid #5bc0eb !important;
+  background: #5bc0eb !important;
+}
+.fh5co-card-item:hover figure .overlay,
+.fh5co-card-item:focus figure .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.fh5co-card-item:hover figure .overlay i,
+.fh5co-card-item:focus figure .overlay i {
+  margin-top: -15px;
+}
+.fh5co-card-item:hover h2,
+.fh5co-card-item:hover span,
+.fh5co-card-item:focus h2,
+.fh5co-card-item:focus span {
+  text-decoration: none !important;
+}
+/*End blogue*/
+/*---------------------
+  Testimonial Slider
+-----------------------*/
+/* Slideshow container */
+.card-main {
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  left: -20px;
+  box-shadow: 0px 4px 8px 0px #5bc0eb;
+}
+
+.card-0 {
+  color: white;
+  background-color: #5bc0eb;
+  position: relative;
+  margin-left: 70px;
+  border-radius: 10px;
+  min-height: 312px;
+}
+
+.carousel-indicators li {
+  cursor: pointer;
+  border-radius: 50% !important;
+  width: 10px;
+  height: 10px;
+}
+
+.profile {
+  color: #fff;
+  background-color: #252b33;
+  position: absolute;
+  left: -70px;
+  top: 17%;
+  border-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.open-quotes {
+  margin-left: 130px;
+  margin-top: 100px;
+}
+
+.content {
+  margin-left: 150px;
+  margin-right: 80px;
+}
+
+.close-quotes {
+  margin-bottom: 100px;
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 900px) {
+  .card-main {
+    padding: 50px 10px;
+  }
+
+  .card-0 {
+    min-height: 432px;
+  }
+
+  .profile {
+    top: 24%;
+  }
+  .profile-pic {
+    width: 90px;
+    height: 90px;
+  }
+  .open-quotes {
+    margin-left: 100px;
+  }
+  .content {
+    margin-left: 120px;
+    margin-right: 50px;
+  }
+  .close-quotes {
+    margin-right: 30px;
+  }
+}
+
+/* faq section */
+
+.faq {
+  background-image: url("../images/fiat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.faq .container-fluid {
+  background-color: rgba(34, 34, 34, 0.466);
+  position: absolute;
+  top: 20%;
+}

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cars Gallery</title>
+
+  <!-- magnific-popup css cdn link  -->
+  <link rel="stylesheet" href="css/magnific-popup.min.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/jquery.flipster.min.css">
+  <link rel="stylesheet" href="dist/fontawesome-5.15.3/css/all.css">
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+    <a class="navbar-brand" href="#">
+        <span>MISI</span><span>CARS</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse " id="main-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link " href="Home.html">ACCEUIL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="aboutUs.html">À PROPOS</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link active" href="Cars.html">NOS VOITURES </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="services.html">SERVICES </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="loginSignUp.html">SE CONNECTER </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="contact_us.html"> CONTACTER-NOUS </a>
+          </li>
+      </ul>
+    </div>
+</div>
+  </nav>
+  <div class="banner">
+    <div class="carousel">
+      <ul>
+        <li>
+          <img src="images/Huyndai-Sedan-lg.png" alt="">
+        </li>
+        <li>
+          <img src="images/Mercedes-A-Class-lg.png" alt="">
+        </li>
+        <li>
+          <img src="images/Fiat-Décapotable-lg.png" alt="">
+        </li>
+        <li>
+          <img src="images/fiat-brune-lg.png" alt="">
+        </li>
+        <li>
+          <img src="images/Toyota-Prius-lg.png" alt="">
+        </li>
+  
+      </ul>
+    </div>
+  
+    <div class="description bg-white">
+      <h1>Découvrez notre gamme de voitures de location</h1>
+      <p>Optez pour une location de voiture chez <span class="name-agency">MISI-CAR</span>. Notre agence sélectionne des véhicules performants et vous garantit
+      l’accès à un service de qualité. Découvrez toute notre gamme, allant des voitures de luxe aux SUV. Les modèles hybrides
+      et électriques sont aussi présents au catalogue. Vous allez faire des économies en carburant et participer au respect de
+      l’environnement.</p>
+      <p>Choisissez votre voiture à louer parmi toutes celles proposées et offrez-vous une expérience de conduite exceptionnelle.
+      Le confort de vos passagers n’est pas en reste avec des intérieurs de grand standing. Vous hésitez entre plusieurs
+      modèles ? Laissez-vous surprendre par la catégorie mystère…</p>
+    </div>
+  </div>
+
+
+  <section class="gallery">
+    <!-- Buttons to Filter Cars Types-->
+    <ul class="controls">
+      <li class="buttons active" data-filter="all">Tous</li>
+      <li class="buttons" data-filter="volkswagen">Volkswagen</li>
+      <li class="buttons" data-filter="audi">Audi</li>
+      <li class="buttons" data-filter="fiat">Fiat</li>
+      <li class="buttons" data-filter="hyunday">Hyunday</li>
+      <li class="buttons" data-filter="toyota">Toyota</li>
+      <li class="buttons" data-filter="mercedes">Mercedes</li>
+    </ul>
+
+    <!-- Srat Images Gallery -->
+    <div class="image-container">
+      <!-- volkswagen Images -->
+      <div class="image volkswagen">
+        <a href="images/VW-Volkswagen-Break-lg.png" class="">
+          <img src="images/VW-Volkswagen-Break.png" alt="">
+        </a>
+        <div class="overlay">
+          <p>VW Volkswagen Break</p>
+          <span>700 DH</span>
+        </div>
+        <div class="btns">
+          <button class="btn btn-booking">Réservation</button>
+          <button class="btn btn-detail">détailles</button>
+        </div>
+      </div>
+      <div class="image volkswagen">
+        <a href="images/VW-VolkswagenGolf-lg.png" class="">
+          <img src="images/VW-VolkswagenGolf.png" alt="">
+        </a>
+        <div class="overlay">
+          <p>VW Volkswagen Golf</p>
+          <span>650 DH</span>
+        </div>
+        <div class="btns">
+          <button class="btn btn-booking">Réservation</button>
+          <button class="btn btn-detail">détailles</button>
+        </div>
+      </div>
+      <div class="image volkswagen">
+        <a href="images/VW-VolkswagenPassat-lg.png" class="">
+          <img src="images/VW-VolkswagenPassat.png" alt="">
+        </a>
+        <div class="overlay">
+          <p>VW Volkswagen Passat</p>
+          <span>800 DH</span>
+        </div>
+        <div class="btns">
+          <button class="btn btn-booking">Réservation</button>
+          <button class="btn btn-detail">détailles</button>
+        </div>
+      </div>
+
+      <!-- Audi Images -->
+      <div class="image audi">
+          <a href="images/Audi-Noire-lg.png" class="">
+              <img src="images/Audi-Noire.png" alt="">
+          </a>
+          <div class="overlay">
+              <p>Audi Noire</p>
+              <span>500 DH</span>
+          </div>
+          <div class="btns">
+              <button class="btn btn-booking">Réservation</button>
+              <button class="btn btn-detail">détailles</button>
+          </div>
+      </div>
+
+      <div class="image audi">
+          <a href="images/Audi-Q3Orange-lg.png" class="">
+              <img src="images/Audi-Q3Orange.png" alt="">
+          </a>
+          <div class="overlay">
+              <p>Audi Q3 Orange</p>
+              <span>400 DH</span>
+          </div>
+          <div class="btns">
+              <button class="btn btn-booking">Réservation</button>
+              <button class="btn btn-detail">détailles</button>
+          </div>
+      </div>
+      <div class="image audi">
+          <a href="images/Audi-RS4-lg.png" class="">
+              <img src="images/Audi-RS4.png" alt="">
+          </a>
+          <div class="overlay">
+              <p>Audi RS4</p>
+              <span>700 DH</span>
+          </div>
+          <div class="btns">
+              <button class="btn btn-booking">Réservation</button>
+              <button class="btn btn-detail">détailles</button>
+          </div>
+      </div>
+
+      <!-- Fiat Images -->
+      <div class="image fiat">
+          <a href="images/fiat-brune-lg.png" class="">
+              <img src="images/fiat-brune.png" alt="">
+          </a>
+          <div class="overlay">
+              <p>Fiat brune</p>
+              <span>400 DH</span>
+          </div>
+          <div class="btns">
+              <button class="btn btn-booking">Réservation</button>
+              <button class="btn btn-detail">détailles</button>
+          </div>
+      </div>
+      <div class="image fiat">
+          <a href="images/Fiat-500-lg.png" class="">
+              <img src="images/Fiat-500.png" alt="">
+          </a>
+          <div class="overlay">
+              <p>Fiat 500</p>
+              <span>700 DH</span>
+          </div>
+          <div class="btns">
+              <button class="btn btn-booking">Réservation</button>
+              <button class="btn btn-detail">détailles</button>
+          </div>
+      </div>
+      <div class="image fiat">
+          <a href="images/Fiat-Décapotable-lg.png" class="">
+              <img src="images/Fiat-Décapotable.png" alt="">
+          </a>
+          <div class="overlay">
+              <p>Fiat Décapotable</p>
+              <span>600 DH</span>
+          </div>
+          <div class="btns">
+              <button class="btn btn-booking">Réservation</button>
+              <button class="btn btn-detail">détailles</button>
+          </div>
+      </div>
+      <div class="image fiat">
+          <a href="images/Fiat-Egea-lg.png" class="">
+              <img src="images/Fiat-Egea.png" alt="">
+          </a>
+          <div class="overlay">
+              <p>Fiat Egea</p>
+              <span>500 DH</span>
+          </div>
+          <div class="btns">
+              <button class="btn btn-booking">Réservation</button>
+              <button class="btn btn-detail">détailles</button>
+          </div>
+      </div>
+
+      <!-- hyunday Images -->
+      <div class="image hyunday">
+        <a href="images/Huyndai-Coupé-lg.png" class="">
+          <img src="images/Huyndai-Coupé.png" alt="">
+        </a>
+        <div class="overlay">
+          <p>Huyndai Coupé</p>
+          <span>400 DH</span>
+        </div>
+        <div class="btns">
+          <button class="btn btn-booking">Réservation</button>
+          <button class="btn btn-detail">détailles</button>
+        </div>
+      </div>
+      <div class="image hyunday">
+          <a href="images/Huyndai-Sedan-lg.png" class="">
+              <img src="images/Huyndai-Sedan.png" alt="">
+          </a>
+          <div class="overlay">
+              <p>Huyndai Sedan</p>
+              <span>450 DH</span>
+          </div>
+          <div class="btns">
+              <button class="btn btn-booking">Réservation</button>
+              <button class="btn btn-detail">détailles</button>
+          </div>
+      </div>
+      <div class="image hyunday">
+          <a href="images/Huyndai-SUV-lg.png" class="">
+              <img src="images/Huyndai-SUV.png" alt="">
+          </a>
+          <div class="overlay">
+              <p>Huyndai SUV</p>
+              <span>450 DH</span>
+          </div>
+          <div class="btns">
+              <button class="btn btn-booking">Réservation</button>
+              <button class="btn btn-detail">détailles</button>
+          </div>
+      </div>
+
+      <!-- Toyota Images -->
+      <div class="image toyota">
+        <a href="images/Toyota Sequoia-lg.png" class="">
+          <img src="images/Toyota-Sequoia.png" alt="">
+        </a>
+        <div class="overlay">
+          <p>Toyota Sequoia</p>
+          <span>600 DH</span>
+        </div>
+        <div class="btns">
+          <button class="btn btn-booking">Réservation</button>
+          <button class="btn btn-detail">détailles</button>
+        </div>
+      </div>
+      <div class="image toyota">
+        <a href="images/Toyota-Orange-GT86-lg.png" class="">
+          <img src="images/Toyota-Orange-GT86.png" alt="">
+        </a>
+        <div class="overlay">
+          <p>Toyota Orange GT86</p>
+          <span>500 DH</span>
+        </div>
+        <div class="btns">
+          <button class="btn btn-booking">Réservation</button>
+          <button class="btn btn-detail">détailles</button>
+        </div>
+      </div>
+      <div class="image toyota">
+        <a href="images/Toyota-Prius-lg.png" class="">
+          <img src="images/Toyota-Prius.png" alt="">
+        </a>
+        <div class="overlay">
+          <p>Toyota Prius</p>
+          <span>400 DH</span>
+        </div>
+        <div class="btns">
+          <button class="btn btn-booking">Réservation</button>
+          <button class="btn btn-detail">détailles</button>
+        </div>
+      </div>
+      <div class="image toyota">
+        <a href="images/Toyota-Pickup-lg.png" class="">
+          <img src="images/Toyota-Pickup.png" alt="">
+        </a>
+        <div class="overlay">
+          <p>Toyota Pickup</p>
+          <span>400 DH</span>
+        </div>
+        <div class="btns">
+          <button class="btn btn-booking">Réservation</button>
+          <button class="btn btn-detail">détailles</button>
+        </div>
+      </div>
+
+      <!-- Mercedes Images -->
+      <div class="image mercedes">
+          <a href="images/Mercedes-A-Class-lg.png" class="">
+              <img src="images/Mercedes-A-Class.png" alt="">
+          </a>
+          <div class="overlay">
+              <p>Mercedes A Class</p>
+              <span>700 DH</span>
+          </div>
+          <div class="btns">
+              <button class="btn btn-booking">Réservation</button>
+              <button class="btn btn-detail">détailles</button>
+          </div>
+      </div>
+      <div class="image mercedes">
+          <a href="images/Mercedes-Décapotalbe-lg.png" class="">
+              <img src="images/Mercedes-Décapotalbe.png" alt="">
+          </a>
+          <div class="overlay">
+              <p>Mercedes Décapotalbe</p>
+              <span>700 DH</span>
+          </div>
+          <div class="btns">
+              <button class="btn btn-booking">Réservation</button>
+              <button class="btn btn-detail">détailles</button>
+          </div>
+      </div>
+      <div class="image mercedes">
+        <a href="images/Mercedes-SUV-lg.png" class="">
+          <img src="images/Mercedes-SUV.png" alt="">
+        </a>
+        <div class="overlay">
+          <p>Mercedes-SUV</p>
+          <span>600 DH</span>
+        </div>
+        <div class="btns">
+          <button class="btn btn-booking">Réservation</button>
+          <button class="btn btn-detail">Détailles</button>
+        </div>
+      </div>
+    </div>
+  <!-- End Images Gallery -->
+    
+  <!-- Start Detail MODAL -->
+    <div class="modal mt-4" id="modal-detail" style="z-index: 10000;">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="text-center mx-auto"> 
+            Plus de détailles
+          </h2>
+          <span class="close" style="margin: -1rem -1rem -1rem ;">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="image-detail justify-content-center">
+            <img src="images/vehicle-category-2.png" alt="">
+          </div>
+          <div class="titre-detail">
+            <span>CHEVEROLET</span>
+            <h2>Mercedes Grand Sedan.</h2>
+          </div>
+          <div class="car-detail">
+            <div class="info">
+              <img src="images/transmission.svg" width="30px" alt="">
+              <p class="desc">Manuelle</p>
+    
+            </div>
+            <div class="info">
+              <img src="images/fuel-station.svg" width="30px" alt="">
+              <p class="desc">Diesel</p>
+            </div>
+    
+            <div class="info">
+              <img src="images/seat.svg" width="30px" alt="">
+              <p class="desc">5 places</p>
+            </div>
+          </div>
+    
+          <div class="more-detail">
+            <p>La position de conduite haute de cette voiture de location, comme dans les tout-terrains, vous donnera la
+              visibilité
+              nécessaire pour une conduite fluide et énergique. Son habitacle confortable sera votre allié pour vos trajets
+              et rendra
+              votre expérience en voiture de location particulièrement plaisante.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End Detail MODAL -->
+        
+  <!-- Start Booking MODAL -->
+    <div id="modal-booking" class="modal mt-5" style="z-index: 10000;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="text-center mx-auto"> 
+            <img id="car-image" src="images/car-1.svg" alt="">
+            Réservation
+          </h2>
+          <span class="close-booking">&times;</span>
+        </div>
+        <div class="modal-body">
+          <!-- Form Reservation -->
+          <form action="" class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4 mb-2 mt-4">
+                <label for="">Lieu de départ :</label>
+              </div>
+              <div class="col-lg-8 mb-2 mt-4">
+                <select class="custom-select rounded-lg" id="lieuD">
+                  <option value="Ouarzazate">Ouarzazate</option>
+                  <option value="Casablanca">Casablanca</option>
+                  <option value="Agadir">Agadir</option>
+                </select>
+              </div>
+              <div class="col-lg-4 my-2">
+                <label for="">Lieu de destination:</label>
+              </div>
+              <div class="col-lg-8 my-2">
+                <select class="custom-select rounded-lg" id="lieuD">
+                  <option value="Marrakech">Marrakech</option>
+                  <option value="Casablanca">Casablanca</option>
+                  <option value="Agadir">Agadir</option>
+                </select>
+              </div>
+              <div class="col-lg-4 my-2">
+                <label for="">Date de départ :</label>
+              </div>
+              <div class="col-lg-5 my-2">
+                <input type="date" class="form-control rounded-lg">
+              </div>
+              <div class="col-lg-3 my-2">
+                <select class="form-control" required>
+                  <option>01 AM</option>
+                  <option>02 AM</option>
+                  <option>03 AM</option>
+                  <option>04 AM</option>
+                  <option>05 AM</option>
+                  <option>06 AM</option>
+                  <option>07 AM</option>
+                  <option>08 AM</option>
+                  <option>09 AM</option>
+                  <option>10 AM</option>
+                  <option>11 AM</option>
+                  <option>12 AM</option>
+                </select>
+              </div>
+              <div class="col-lg-4 my-2">
+                <label for="">Date de retour :</label>
+              </div>
+              <div class="col-lg-5 my-2">
+                <input type="date" class="form-control rounded-lg ">
+              </div>
+              <div class="col-lg-3 my-2">
+                <select class="form-control" required>
+                  <option>01 AM</option>
+                  <option>02 AM</option>
+                  <option>03 AM</option>
+                  <option>04 AM</option>
+                  <option>05 AM</option>
+                  <option>06 AM</option>
+                  <option>07 AM</option>
+                  <option>08 AM</option>
+                  <option>09 AM</option>
+                  <option>10 AM</option>
+                  <option>11 AM</option>
+                  <option>12 AM</option>
+                </select>
+              </div>
+              <div class="col-sm-12 text-center my-2 mb-5">
+                <input type="submit" value="Réserver maintenant" class="btn btn-light">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Booking MODAL -->
+  </section>
+
+
+
+
+
+<!-- jquery cdn link  -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+<!-- magnific popup js cdn link  -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+
+<!-- flipster js cdn link  -->
+<script src="dist/jquery.flipster.min.js"></script>
+
+<!-- Custom Js file -->
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: cursive;
+    overflow-x: hidden;
+  }
+ 
+  
+  /* **---------------- START STYLE OF MAIN --------------** */
+
+
+      .main-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/dr.jpg");
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      
+      .main-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: cursive;
+      }
+
+      .content {
+        position: absolute;
+        top: 63%;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .carhome{
+        transform: scale(0.6);
+      }
+       .hcar1{
+          color: rgb(166, 241, 96);
+          font-size: 60px;
+       }
+       .hcar2{
+        color: rgb(69, 179, 243);
+        font-size: 60px;
+     }
+     .hcar3{
+      color: rgb(69, 243, 176);
+      font-size: 60px;
+   }
+
+      #myBtnimg {
+        background-image: url("../images/tenor.gif");
+        background-size:cover;
+        background-position-y: -8px;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 82px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+  /* **---------------- END STYLE OF MAIN --------------** */
+  
+
+
+  /* **---------------- START STYLE OF VIDEO --------------** */
+
+ #myVideo{
+    width: 70%;
+    transform: translate(20%,0%);
+  }
+ 
+  #playvideo{
+    position: relative
+  }
+  #playV{
+    position:absolute ;
+    top: 50%;
+    left: 47%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+ 
+
+
+  /* **---------------- END STYLE OF VIDEO --------------** */
+
+/* **----------------- start style of article ------------ */
+
+  .rowCol{
+    background-color: whitesmoke;
+    text-align: left;
+    padding: 25px;
+    font-family: cursive;
+  }
+
+  .rowCol:hover{
+    background-color: rgb(133, 221, 233);
+    color: white;
+    font-family: cursive;
+  }
+
+  .rowsta{
+    text-align: left;
+    padding: 25px 25px 25px 0px;
+    transition: all .5s;
+  }
+
+  .rowsta:hover{
+     transform: scale(1.2);
+  }
+
+
+  /* **---------- satrt style contact ---------------** */
+
+  #contact{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-image: url("../images/bcar.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.7;
+  }
+
+
+
+  /* **-------- style of icons ---------- */
+
+  .ico{
+    color: #5bc0eb;
+    font-size: 45px;
+  }
+
+
